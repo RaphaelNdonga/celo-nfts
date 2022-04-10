@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/celo-nfts/static/css/main.d87cbb72.chunk.css",
+    "main.js": "/celo-nfts/static/js/main.19263787.chunk.js",
+    "main.js.map": "/celo-nfts/static/js/main.19263787.chunk.js.map",
+    "runtime-main.js": "/celo-nfts/static/js/runtime-main.afef7315.js",
+    "runtime-main.js.map": "/celo-nfts/static/js/runtime-main.afef7315.js.map",
+    "static/css/2.6da90f0b.chunk.css": "/celo-nfts/static/css/2.6da90f0b.chunk.css",
+    "static/js/2.e56e3954.chunk.js": "/celo-nfts/static/js/2.e56e3954.chunk.js",
+    "static/js/2.e56e3954.chunk.js.map": "/celo-nfts/static/js/2.e56e3954.chunk.js.map",
+    "static/js/3.fb4dd64f.chunk.js": "/celo-nfts/static/js/3.fb4dd64f.chunk.js",
+    "static/js/3.fb4dd64f.chunk.js.map": "/celo-nfts/static/js/3.fb4dd64f.chunk.js.map",
+    "index.html": "/celo-nfts/index.html",
+    "static/css/2.6da90f0b.chunk.css.map": "/celo-nfts/static/css/2.6da90f0b.chunk.css.map",
+    "static/css/main.d87cbb72.chunk.css.map": "/celo-nfts/static/css/main.d87cbb72.chunk.css.map",
+    "static/js/2.e56e3954.chunk.js.LICENSE.txt": "/celo-nfts/static/js/2.e56e3954.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/celo-nfts/static/media/bootstrap-icons.c1d7432e.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.afef7315.js",
+    "static/css/2.6da90f0b.chunk.css",
+    "static/js/2.e56e3954.chunk.js",
+    "static/css/main.d87cbb72.chunk.css",
+    "static/js/main.19263787.chunk.js"
+  ]
+}
