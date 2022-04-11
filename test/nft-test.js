@@ -18,9 +18,15 @@ describe("MyNFT", function () {
         myNFT = await MyNFT.deploy();
     });
 
-    it("Should set the right owner", async function () {
+    it("Should set the right contract owner", async function () {
         expect(await myNFT.owner()).to.equal(owner.address);
     });
+
+    it("Should have the right nft owner", async () => {
+        let txn = await myNFT.connect(owner).safeMint(acc2.address, "https://google.com");
+        await txn.wait();
+        expect(await myNFT.ownerOf(0)).to.equal(acc2.address);
+    })
 
     it("Should mint one NFT", async function () {
         expect(await myNFT.balanceOf(acc1.address)).to.equal(0);
