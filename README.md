@@ -1,3 +1,5 @@
+# [Project Link](https://raphaelndonga.github.io/celo-nfts/)
+
 # Celo React Boilerplate
 This repository contains a simple React boilerplate for Celo projects.
 
