@@ -23,7 +23,18 @@ describe("NFT Trader testing suite: ", function () {
     it("Should receive an NFT", async () => {
         let txn = await myNFT.transferFrom(deployer.address, NFTTrader.address, 0);
         await txn.wait();
-        let nftOwner = await myNFT.ownerOf(0)
+        let nftOwner = await myNFT.ownerOf(0);
         expect(nftOwner).to.equal(NFTTrader.address);
     });
+
+    it("Should send an NFT", async () => {
+        let txn = await myNFT.transferFrom(deployer.address, NFTTrader.address, 0);
+        await txn.wait();
+        txn = await NFTTrader.sellNFT(deployer.address,
+            myNFT.address,
+            0)
+        await txn.wait();
+        let nftOwner = await myNFT.ownerOf(0);
+        expect(nftOwner).to.equal(deployer.address)
+    })
 })
