@@ -1,5 +1,18 @@
 import { create as ipfsHttpClient } from "ipfs-http-client";
 import axios from "axios";
+import MyNFTContractAddress from "../contracts/MyNFT-address.json";
+
+export const getNFTFromUser = async (traderContract, tokenId) => {
+    const txn = await traderContract.methods.acquireNFT(MyNFTContractAddress.MyNFT, tokenId).call();
+    await txn.wait();
+}
+
+export const sellNFTToUser = async (traderContract, tokenId, buyer) => {
+    const txn = await traderContract.methods.sellNFT(buyer,
+        MyNFTContractAddress.MyNFT,
+        tokenId)
+    await txn.wait();
+}
 
 const client = ipfsHttpClient("https://ipfs.infura.io:5001/api/v0");
 
@@ -102,6 +115,6 @@ export const fetchNftContractOwner = async (minterContract) => {
         let owner = await minterContract.methods.owner().call();
         return owner;
     } catch (e) {
-        console.log({ e });
+        console.log("Error while fetching nft contract owner: ", e);
     }
 };
